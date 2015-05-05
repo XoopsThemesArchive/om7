@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body,td,th {
+	color: #1D4178;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+body {
+	background-color: #1d4178;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+-->
+</style></head>
+
+<body>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="images/template_01.gif" width="475" height="87"></td>
+        <td width="100%" rowspan="2" background="images/template_02.gif">&nbsp;</td>
+        <td width="211" height="124" rowspan="2"><img src="images/template_03.gif" width="211" height="124"></td>
+      </tr>
+      <tr>
+        <td><img src="images/template_04.gif" width="475" height="37"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="25" background="images/template_05.gif"><img src="images/template_05.gif" width="25" height="8"> </td>
+        <td width="100%" bgcolor="#FFFFFF"><table width="630" cellspacing="0" class="maintable">
+          <tr>
+            <!-- Display left blocks start-->
+<{if $xoops_showlblock = 1}>
+    <td id="leftcolumn">
+      <!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}> <{include file="om7/blocks/theme_blockleft.html"}> <{/foreach}>
+      <!-- End left blocks loop -->
+    </td>
+<{/if}>
+    <!-- Display left blocks end -->
+    <td id="centercolumn">
+      <!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+      <table cellspacing="0">
+        <tr>
+          <td id="centerCcolumn" colspan="2">
+            <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}> <{include file="om7/blocks/theme_blockcenter_c.html"}> <{/foreach}>
+            <!-- End center-center blocks loop -->
+          </td>
+        </tr>
+        <tr>
+          <td id="centerLcolumn">
+            <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="om7/blocks/theme_blockcenter_l.html"}> <{/foreach}>
+            <!-- End center-left blocks loop -->
+          </td>
+          <td id="centerRcolumn">
+            <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="om7/blocks/theme_blockcenter_r.html"}> <{/foreach}>
+            <!-- End center-right blocks loop -->
+          </td>
+        </tr>
+      </table>
+<{/if}>
+      <!-- End display center blocks -->
+      <div id="content"> <{$xoops_contents}> </div></td>
+    <!-- Display right blocks start-->
+<{if $xoops_showrblock == 1}>
+    <td id="rightcolumn">
+      <!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}> <{include file="om7/blocks/theme_blockright.html"}> <{/foreach}>
+      <!-- End right blocks loop -->
+    </td>
+<{/if}>
+    <!-- Display right blocks end-->
+          </tr>
+        </table></td>
+        <td width="25" background="images/template_07.gif"><img src="images/template_07.gif" width="28" height="8"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="475"><img src="images/template_08.gif" width="475" height="41"></td>
+        <td width="100%" background="images/template_09.gif">&nbsp;</td>
+        <td width="211"><img src="images/template_10.gif" width="211" height="41"></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

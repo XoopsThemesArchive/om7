@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #1D4178;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+body {
+	background-color: #1d4178;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+a:link {
+	color: #006699;
+}
+a:visited {
+	color: #006699;
+}
+a:hover {
+	color: #FF9900;
+}
+a:active {
+	color: #006699;
+}
+-->
+</style></head>
+
+<body>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="themes/om7/images/template_01.gif" width="475" height="87"></td>
+        <td width="100%" rowspan="2" background="themes/om7/images/template_02.gif">&nbsp;</td>
+        <td width="211" height="124" rowspan="2"><img src="themes/om7/images/template_03.gif" width="211" height="124"></td>
+      </tr>
+      <tr>
+        <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="475" height="37">
+          <param name="movie" value="themes/om7/headlines.swf">
+          <param name="quality" value="high">
+          <embed src="themes/om7/headlines.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="475" height="37"></embed>
+        </object></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="25" background="themes/om7/images/template_05.gif"><img src="themes/om7/images/template_05.gif" width="25" height="8"> </td>
+        <td width="100%" bgcolor="#FFFFFF"><table width="630" cellspacing="0" class="maintable">
+          <tr>
+            <!-- Display left blocks start-->
+<{if $xoops_showlblock == 1}>
+    <td id="leftcolumn">
+      <!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}> <{include file="om7/blocks/theme_blockleft.html"}> <{/foreach}>
+      <!-- End left blocks loop -->
+    </td>
+<{/if}>
+    <!-- Display left blocks end -->
+    <td id="centercolumn">
+      <!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+      <table cellspacing="0">
+        <tr>
+          <td id="centerCcolumn" colspan="2">
+            <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}> <{include file="om7/blocks/theme_blockcenter_c.html"}> <{/foreach}>
+            <!-- End center-center blocks loop -->
+          </td>
+        </tr>
+        <tr>
+          <td id="centerLcolumn">
+            <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="om7/blocks/theme_blockcenter_l.html"}> <{/foreach}>
+            <!-- End center-left blocks loop -->
+          </td>
+          <td id="centerRcolumn">
+            <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="om7/blocks/theme_blockcenter_r.html"}> <{/foreach}>
+            <!-- End center-right blocks loop -->
+          </td>
+        </tr>
+      </table>
+<{/if}>
+      <!-- End display center blocks -->
+      <div id="content"> <{$xoops_contents}> </div></td>
+    <!-- Display right blocks start-->
+<{if $xoops_showrblock == 1}>
+    <td id="rightcolumn">
+      <!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}> <{include file="om7/blocks/theme_blockright.html"}> <{/foreach}>
+      <!-- End right blocks loop -->
+    </td>
+<{/if}>
+    <!-- Display right blocks end-->
+          </tr>
+        </table></td>
+        <td width="25" background="themes/om7/images/template_07.gif"><img src="themes/om7/images/template_07.gif" width="28" height="8"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="475"><img src="themes/om7/images/template_08.gif" width="475" height="41"></td>
+        <td width="100%" background="themes/om7/images/template_09.gif">&nbsp;</td>
+        <td width="211"><img src="themes/om7/images/template_10.gif" width="211" height="41"></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<div align="center"><br>
+  <a href="http://www.omnetwork.net">design by omnetwork.net</a></div>
+</body>
+</html>
